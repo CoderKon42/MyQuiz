@@ -102,7 +102,7 @@ let nächsteFrage = () => {
             document.getElementById("question").innerHTML = `Quiz vorbei! du hast ${richtige} von ${conterFragen} richtig beantwortet! Das sind  100%! sehr gut!`
         }
         document.getElementById("answerone").innerHTML = ""
-        document.getElementById("answertwo").erHTML = ""
+        document.getElementById("answertwo").innerHTML = ""
         document.getElementById("answerfour").innerinnerHTML = ""
         document.getElementById("answerthree").innHTML = ""
         document.getElementById("output").innerHTML = "";
