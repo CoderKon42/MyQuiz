@@ -94,28 +94,12 @@ let nächsteFrage = () => {
 
         if (percenteval === 0) {
             document.getElementById("question").innerHTML = `Quiz vorbei! du hast ${richtige} von ${conterFragen} richtig beantwortet! Das sind  0%! Da hat selst der Zufall einen höheren Erwartungswert!`
-            document.getElementById("answerone").innerHTML = ""
-            document.getElementById("answertwo").innerHTML = ""
-            document.getElementById("answerthree").innerHTML = ""
-            document.getElementById("answerfour").innerHTML = ""
-            document.getElementById("output").innerHTML = "";
         } else if (percenteval < 0.5) {
             document.getElementById("question").innerHTML = `Quiz vorbei! du hast ${richtige} von ${conterFragen} richtig beantwortet! Das sind  ${percent}%! Das kannst du besser!`
-            document.getElementById("answerone").innerHTML = ""
-            document.getElementById("answertwo").innerHTML = ""
-            document.getElementById("answerthree").innerHTML = ""
-            document.getElementById("answerfour").innerHTML = ""
-            document.getElementById("output").innerHTML = "";
         } else if (percenteval < 1) {
             document.getElementById("question").innerHTML = `Quiz vorbei! du hast ${richtige} von ${conterFragen} richtig beantwortet! Das sind  ${percent}%! Das ist ordentlich!`
-            document.getElementById("answerone").innerHTML = ""
-            document.getElementById("answertwo").innerHTML = ""
-            document.getElementById("answerthree").innerHTML = ""
-            document.getElementById("answerfour").innerHTML = ""
-            document.getElementById("output").innerHTML = "";
         } else if (percenteval === 1) {
             document.getElementById("question").innerHTML = `Quiz vorbei! du hast ${richtige} von ${conterFragen} richtig beantwortet! Das sind  100%! sehr gut!`
-
         }
         document.getElementById("answerone").innerHTML = ""
         document.getElementById("answertwo").erHTML = ""
