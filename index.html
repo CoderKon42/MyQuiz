@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="gesamt">0</div>
+        <div id="t">/</div>
+        <div id="richtigbeantwortete">0</div>
+    </div>
+    <div class="top">
+        <h1 class="überschrift">Quiz- Wie gut bist du?</h1>
+        <div id="question">Ist der Himmel blau (wenn die Sonne scheint)?</div>
+    </div>
+    <div class="answers">
+        <table>
+            <tr>
+                <td id="answerone" onclick="isRight(trueornotone)">ja</td>
+                <td id="answertwo" onclick="isRight(trueornottwo)">nein</td>
+            </tr>
+
+            <tr>
+                <td id="answerthree" onclick="isRight(trueornotthree)">42</td>
+                <td id="answerfour" onclick="isRight(trueornotfour)">nur am 29 Februar</td>
+            </tr>
+        </table>
+    </div>
+    <div id="output"></div>
+    <br>
+
+    <button class="button" onclick="nächsteFrage()">
+            next
+        </button>
+
+</body>
+
+</html>
