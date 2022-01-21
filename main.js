@@ -103,8 +103,8 @@ let nächsteFrage = () => {
         }
         document.getElementById("answerone").innerHTML = ""
         document.getElementById("answertwo").innerHTML = ""
-        document.getElementById("answerfour").innerinnerHTML = ""
-        document.getElementById("answerthree").innHTML = ""
+        document.getElementById("answerfour").innerHTML = ""
+        document.getElementById("answerthree").innerHTML = ""
         document.getElementById("output").innerHTML = "";
     }
 }
