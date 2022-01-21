@@ -68,7 +68,7 @@ let nächsteFrage = () => {
     } else if (conterFragen === 4) {
         wasntincreased = true;
         conterFragen += 1
-        document.getElementById("question").innerHTML = 'Welche Gruppe ist für "Hallo Welt bekannt"'
+        document.getElementById("question").innerHTML = 'Welche Gruppe ist für "Hallo Welt" bekannt'
         document.getElementById("answerone").innerHTML = "Schwimmer"
         document.getElementById("answertwo").innerHTML = "Bergsteiger"
         document.getElementById("answerthree").innerHTML = "Programmier"
