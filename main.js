@@ -106,5 +106,5 @@ let nächsteFrage = () => {
         document.getElementById("answerfour").innerHTML = ""
         document.getElementById("answerthree").innerHTML = ""
         document.getElementById("output").innerHTML = "";
-    } //wer das ließt ist cool
+    } //wer das ließt ist cool!
 }
