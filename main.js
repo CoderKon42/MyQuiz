@@ -65,25 +65,20 @@ let nächsteFrage = () => {
         trueornottwo = false;
         trueornotthree = true;
         trueornotfour = false;
-    }
-    /* 
-       um weitere Fragen anzulegen:
-       else if (conterFragen === 3) {                  immer eins höher als vorher (hier: 4)
-           wasntincreased = true;                      so lassen
-           conterFragen += 1                           so lassen
-           document.getElementById("question").innerHTML = 'Wie heißt Müller (FCB-Fußball) mit Vornamen?'              Frage zwischen den anführungsstrichen austauschen
-           document.getElementById("answerone").innerHTML = "Robert"                   Antwortmöglichkeit eins zwischen den Anführungszeichen austauschen
-           document.getElementById("answertwo").innerHTML = "Sigfried"                 Antwortmöglichkeit zwei zwischen den Anführungszeichen austauschen
-           document.getElementById("answerthree").innerHTML = "Thomas"                 Antwortmöglichkeit drei zwischen den Anführungszeichen austauschen
-           document.getElementById("answerfour").innerHTML = "Hildegart"               Antwortmöglichkeit vier zwischen den Anführungszeichen austauschen
-           document.getElementById("output").innerHTML = "";                           so lassen
-           trueornotone = false;                           wenn anwortmölichkeit eins richtig true, sonst false
-           trueornottwo = false;                           wenn anwortmölichkeit zwei richtig true, sonst false
-           trueornotthree = true;                          wenn anwortmölichkeit drei richtig true, sonst false
-           trueornotfour = false;                          wenn anwortmölichkeit vier richtig true, sonst false
-       }                           Klammer nicht vergessen
-    */
-    else {
+    } else if (conterFragen === 4) {
+        wasntincreased = true;
+        conterFragen += 1
+        document.getElementById("question").innerHTML = 'Welche Gruppe ist für "Hallo Welt bekannt"'
+        document.getElementById("answerone").innerHTML = "Schwimmer"
+        document.getElementById("answertwo").innerHTML = "Bergsteiger"
+        document.getElementById("answerthree").innerHTML = "Programmier"
+        document.getElementById("answerfour").innerHTML = "Tote"
+        document.getElementById("output").innerHTML = "";
+        trueornotone = false;
+        trueornottwo = false;
+        trueornotthree = true;
+        trueornotfour = false;
+    } else {
         let percenteval = eval(richtige / conterFragen);
         let percentArr = Array.from(String(percenteval));
         if (percentArr[4] >= 0.5) {
